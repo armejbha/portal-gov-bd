@@ -39,85 +39,431 @@
       background-image: url(./sources/bg_main.gif);
       background-position: center;
       background-size: cover;
+      background-attachment: fixed;
     "
-    class=""
+    class="banner"
   >
     <!-- header  -->
-    <header class="w-8/12 mx-auto ">
+    <header class="w-8/12 mx-auto drop-shadow-2xl">
       <!-- navbar -->
-      <nav class="flex items-center justify-between bg-nav_color py-2 border-b-btn_color border-b-8">
+      <nav
+        class="flex items-center justify-between bg-nav_color py-2 border-b-btn_color border-b-8"
+      >
         <!-- left  -->
         <div class="flex items-center">
           <h3 class="text-white mr-6 pl-2">বাংলাদেশ জাতীয় তথ্য বাতায়ন</h3>
-         <div class="" style="padding:2px 0px;box-shadow: 0 1px 5px #999999;padding-bottom:4px;">
-          <select name="" id="" class="py-1 pl-1 pr-4 rounded-sm" >
-            <option value="">অফিসের ধরণ</option>
-          </select>
-          <a href="#" class="bg-btn_color rounded-sm font-extrabold text-white" style="padding:3px 10px">Go</a>
-         </div>
+          <div
+            class=""
+            style="padding: 1px 6px 1px 0px; box-shadow: 0 1px 5px #999999"
+          >
+            <select
+              name=""
+              id=""
+              style="padding: 2px 15px 2px 2px"
+              class="rounded-sm"
+            >
+              <option value="">অফিসের ধরণ</option>
+            </select>
+            <a
+              href="#"
+              class="bg-btn_color rounded-sm font-extrabold text-white ml-1"
+              style="padding: 4px 10px"
+              >Go</a
+            >
+          </div>
         </div>
         <!-- right  -->
         <div class="flex items-center gap-2">
           <div class="flex justify-end">
-            <input type="text" class="w-1/2 border-2 border-black  outline-1 text-lg rounded-lg">
+            <input
+              type="text"
+              class="w-3/5 border-2 border-s-black border-t-black text-lg rounded-md"
+            />
           </div>
-          <a href="#" class="bg-btn_color rounded-sm font-extrabold text-white" style="padding:3px 16px">Search</a>
-          <a href="#" class="bg-gray-300 font-semibold rounded-sm border-2 border-gray-400" style="padding:3px 4px;text-shadow: 0 1px rgba(255, 255, 255, .75);">English</a>
+          <a
+            href="#"
+            class="bg-btn_color rounded-sm font-extrabold text-white"
+            style="padding: 3px 16px"
+            >Search</a
+          >
+          <a
+            href="#"
+            class="bg-gray-300 font-semibold rounded-sm border-2 border-gray-400"
+            style="
+              padding: 3px 4px;
+              text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+            "
+            >English</a
+          >
         </div>
       </nav>
       <!-- banner  -->
-       <div class="w-full h-80" style="background-image: url(./sources/banner1.png); background-position: center; background-repeat: no-repeat; background-size:cover;">
-          <div class="relative top-20 left-16">        
-              <div class="w-24">
-                <img class="w-full" src="./sources/logo.png" alt="">
-              </div>
-              <div class="text-gray-50 text-3xl -mt-16 ml-32">
-                <h2 class="font-bold">প্রধান বিদ্যুৎ পরিদর্শকের দপ্তর</h2>
-                <p class="mt-4 text-2xl">বিদ্যুৎ বিভাগ, বিদ্যুৎ জ্বালানি ও খনিজ সম্পদ মন্ত্রণালয়</p>
-              </div>
+      <div
+        class="w-full h-80"
+        style="
+          background-image: url(./sources/banner1.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <div class="relative top-20 left-16">
+          <div class="w-24">
+            <img class="w-full" src="./sources/logo.png" alt="" />
           </div>
-       </div>
+          <div class="text-gray-50 text-3xl -mt-16 ml-32">
+            <h2 class="font-bold">প্রধান বিদ্যুৎ পরিদর্শকের দপ্তর</h2>
+            <p class="mt-4 text-2xl">
+              বিদ্যুৎ বিভাগ, বিদ্যুৎ জ্বালানি ও খনিজ সম্পদ মন্ত্রণালয়
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- main  -->
-    <main class="w-8/12 mx-auto">
+    <main class="w-8/12 mx-auto drop-shadow-sm">
       <!-- main nav bar  -->
-      <nav class="mt-2">
-        <ul class="flex bg-gray-100">
-          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><i class="fa-solid fa-house text-2xl text-gray-500"></i></li>
-          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">আমাদের সম্পর্কে</a></li>
-          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">আমাদের সেবা</a></li>
-          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">সরকারি ফিস</a></li>
-          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">প্রকাশনা ও প্রতিবেদন</a></li>
-          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">ডাউনলোড</a></li>
-          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">ই-লাইসেন্স ও ম্যানুফ্যাকচারার তালিকা</a></li>
-          <li class="pl-8 pr-9 py-4 border-dotted border-b-2"><a href="#"></a></li>
+      <div class="mt-2">
+        <ul class="flex flex-row bg-gray-100 border-dotted border-b-2">
+          <li class="px-2 pt-2 pb-1 border-r-2">
+            <i class="fa-solid fa-house text-2xl text-gray-500"></i>
+          </li>
+          <li class="px-2 py-3 border-r-2 text-lg">
+            <a href="#">আমাদের সম্পর্কে</a>
+          </li>
+          <li class="px-2 py-3 border-r-2 text-lg">
+            <a href="#">আমাদের সেবা</a>
+          </li>
+          <li class="px-2 py-3 border-r-2 text-lg">
+            <a href="#">সরকারি ফিস</a>
+          </li>
+          <li class="px-2 py-3 border-r-2 text-lg">
+            <a href="#">প্রকাশনা ও প্রতিবেদন</a>
+          </li>
+          <li class="px-2 py-3 border-r-2 text-lg">
+            <a href="#">ডাউনলোড</a>
+          </li>
+          <li class="px-2 py-3 border-r-2 text-lg">
+            <a href="#">ই-লাইসেন্স ও ম্যানুফ্যাকচারার তালিকা</a>
+          </li>
+          <!-- <li class="pl-8 pr-9 py-4">
+            <a href="#"></a>
+          </li> -->
         </ul>
-        <ul class="flex">
-          <li class="p-4 border-dotted border-r-2"><a href="#">বিদ্যুৎ বন্ধু</a></li>
-          <li class="p-4 border-dotted border-r-2"><a href="#">ই-সেবা</a></li>
-          <li class="p-4 border-dotted border-r-2"><a href="#">ই-সেবার আবেদনের নিয়মাবলি</a></li>
-          <li class="p-4 border-dotted border-r-2"><a href="#">গ্যালারি</a></li>
-          <li class="p-4 border-dotted border-r-2"><a href="#">লাইসেন্স ফি ক্যালকুলেটর</a></li>
-          <li class="p-4 border-dotted border-r-2"><a href="#">গ্রাহক ফিডব্যাক</a></li>
-          <li class="p-4 border-dotted border-r-2"><a href="#">যোগাযোগ</a></li>
-          <li class="px-8 border-dotted border-r-2"><a href="#"></a></li>
-          <li class="px-12 border-dotted "><a href="#"></a></li>
+        <ul class="flex items-center">
+          <li class="px-4 py-4 border-dotted border-r-2 text-lg">
+            <a href="#">বিদ্যুৎ বন্ধু</a>
+          </li>
+          <li class="px-4 py-4 border-dotted border-r-2 text-lg">
+            <a href="#">ই-সেবা</a>
+          </li>
+          <li class="px-4 py-4 border-dotted border-r-2 text-lg">
+            <a href="#">ই-সেবার আবেদনের নিয়মাবলি</a>
+          </li>
+          <li class="px-4 py-4 border-dotted border-r-2 text-lg">
+            <a href="#">গ্যালারি</a>
+          </li>
+          <li class="px-4 py-4 border-dotted border-r-2 text-lg">
+            <a href="#">লাইসেন্স ফি ক্যালকুলেটর</a>
+          </li>
+          <li class="px-4 py-4 border-dotted border-r-2 text-lg">
+            <a href="#">গ্রাহক ফিডব্যাক</a>
+          </li>
+          <li class="px-4 py-4 border-dotted border-r-2 text-lg">
+            <a href="#">যোগাযোগ</a>
+          </li>
+          <!-- <li class="px-8 border-dotted border-r-2"><a href="#"></a></li>
+          <li class="px-12 border-dotted"><a href="#"></a></li> -->
         </ul>
-      </nav>
+      </div>
       <!-- separated container  -->
-       <div class="flex gap-5 mt-5">
-        <!-- main  --> 
-         <main class="basis-3/4">
-          <marquee width="" direction="left" height="100px" class="text-red-600 text-xl font-bold">
-            *** লাইসেন্স ফি ক্যালকুলেটর ব্যবহার করুন, নিজেই নিজের লাইসেন্স ফি জেনে নিন ***
-            </marquee>
-         </main>
-         <!-- aside  -->
-          <aside class="1/4">
-            
-          </aside>
-       </div>
-
+      <div class="flex gap-5 mt-5">
+        <!-- main  -->
+        <main class="basis-9/12">
+          <marquee
+            width="100%"
+            direction="left"
+            height="100px"
+            class="text-[#FF0000] text-lg font-bold"
+          >
+            *** লাইসেন্স ফি ক্যালকুলেটর ব্যবহার করুন, নিজেই নিজের লাইসেন্স ফি
+            জেনে নিন ***
+          </marquee>
+        </main>
+        <!-- aside  -->
+        <aside class="basis-3/12">
+          <!-- advaiser  -->
+          <div>
+            <h3 class="text-white font-extrabold bg-btn_color py-2 px-1">
+              মাননীয় উপদেষ্টা
+            </h3>
+            <div class="w-10/12 mx-auto mt-10">
+              <img
+                class="w-full"
+                src="./sources/person/chief-advaiser.png"
+                alt=""
+              />
+            </div>
+            <div class="text-center mt-2 space-y-2">
+              <p class="font-extrabold">মুহাম্মদ ফাওজুল কবির খান</p>
+              <p>মাননীয় উপদেষ্টা</p>
+            </div>
+          </div>
+          <!-- sochib  -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-2 px-1">
+              সচিব, বিদ্যুৎ বিভাগ
+            </h3>
+            <div class="w-8/12 mx-auto mt-10">
+              <img class="w-full" src="./sources/person/sochib.jpg" alt="" />
+            </div>
+            <div class="text-center mt-2 space-y-2">
+              <p class="font-extrabold">ফারজানা মমতাজ</p>
+              <p>সচিব, বিদ্যুৎ বিভাগ</p>
+            </div>
+          </div>
+          <!-- viewer -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-2 px-1">
+              প্রধান বিদ্যুৎ পরিদর্শক
+            </h3>
+            <div class="w-8/12 mx-auto mt-10">
+              <img
+                class="w-full"
+                src="./sources/person/additional-sochib.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center mt-2 space-y-2">
+              <p class="font-extrabold">আবুল খায়ের মোঃ আক্কাস আলী</p>
+              <p>(অতিরিক্ত সচিব)</p>
+            </div>
+          </div>
+          <!-- service  -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-5 px-2">
+              অভ্যন্তরীণ ই-সেবাসমূহ
+            </h3>
+            <div class="mt-5">
+              <div class="mt-2">
+                <i
+                  class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                ></i>
+                <a href="#" class="text-gray-500 text-sm">ই-সার্ভিস</a>
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <i
+                  class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                ></i>
+                <a href="#" class="text-gray-500 text-sm"
+                  >অনলাইন পরিদর্শন ব্যবস্থাপনা</a
+                >
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <i
+                  class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                ></i>
+                <a href="#" class="text-gray-500 text-sm"
+                  >অনলাইন ছুটি ব্যবস্থাপনা</a
+                >
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <i
+                  class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                ></i>
+                <a href="#" class="text-gray-500 text-sm">ওয়েব মেইল</a>
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+            </div>
+            <button
+              class="w-full bg-gradient-to-t from-gray-300 to-gray-800 mt-5 py-1"
+            >
+              সকল
+            </button>
+          </div>
+          <!-- internet service  -->
+          <div>
+            <img class="mt-4" src="./sources/banner/myGov.png" alt="myGov" />
+            <img
+              class="mt-4"
+              src="./sources/banner/internal_eservice2.png"
+              alt="internet_service"
+            />
+          </div>
+          <!-- eid mubarak -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-5 pl-2">
+              পবিত্র রমজান মাসে নিরবচ্ছিন্ন সেবায় বিদ্যুৎ বিভাগ আপনার পাশে
+            </h3>
+            <div class="mt-3">
+              <img class="" src="./sources/banner/electricity.jpg" alt="" />
+            </div>
+          </div>
+          <!-- emergency number  -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-3 pl-2">
+              বিদ্যুৎ বিভাগের কেন্দ্রিয় সেবা
+            </h3>
+            <div class="w-11/12 mx-auto">
+              <img
+                class="w-full"
+                src="./sources/banner/call_number.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- calculator-->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-3 pl-2">
+              লাইসেন্স ফি ক্যালকুলেটর
+            </h3>
+            <div class="w-8/12 mx-auto mt-5">
+              <img
+                class="w-full"
+                src="./sources/banner/calculator.png"
+                alt=""
+              />
+              <a href="#" class="text-sm text-center text-red-500 block mt-3"
+                >লাইসেন্স ফি ক্যালকুলেটর
+              </a>
+            </div>
+          </div>
+          <!-- e-service  -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-3 pl-2">
+              কেন্দ্রীয় ই-সেবা
+            </h3>
+          </div>
+          <!-- all important link  -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-3 px-2">
+              গুরুর্তপূর্ন লিঙ্ক সমূহ
+            </h3>
+            <div class="mt-5">
+              <div class="mt-2">
+                <div class="flex items-center">
+                  <i
+                    class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                  ></i>
+                  <a href="#" class="text-gray-500 text-sm"
+                    >ই-সার্ভিস(প্রধান বিদ্যুৎ পরিদর্শকের দপ্তর)</a
+                  >
+                </div>
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <i
+                  class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                ></i>
+                <a href="#" class="text-gray-500 text-sm">ডি-নথি</a>
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <i
+                  class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                ></i>
+                <a href="#" class="text-gray-500 text-sm">বিদ্যুৎ বিভাগ</a>
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <i
+                  class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                ></i>
+                <a href="#" class="text-gray-500"
+                  >বাংলাদেশ বিদ্যুৎ উন্নয়ন বোর্ড</a
+                >
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <i
+                  class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                ></i>
+                <a href="#" class="text-gray-500 text-sm"
+                  >বাংলাদেশ পল্লী বিদ্যুতায়ন বোর্ড</a
+                >
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <div class="flex items-center">
+                  <i
+                    class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                  ></i>
+                  <a href="#" class="text-gray-500 text-sm"
+                    >ঢাকা পাওয়ার ডিস্ট্রিবিউশন কোম্পানী লিঃ (ডিপিডিসি)</a
+                  >
+                </div>
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+              <div class="mt-2">
+                <div class="flex items-center">
+                  <i
+                    class="fa-solid fa-circle-check text-btn_color text-lg mr-4"
+                  ></i>
+                  <a href="#" class="text-gray-500 text-sm"
+                    >পাওয়ার গ্রীড কোম্পানী অব বাংলাদেশ (পিজিসিবি)</a
+                  >
+                </div>
+                <div
+                  class="w-full h-[1px] bg-gradient-to-t from-black to-btn_color mt-2"
+                ></div>
+              </div>
+            </div>
+            <button
+              class="w-full bg-gradient-to-t from-gray-300 to-gray-800 mt-5 py-1"
+            >
+              সকল লিংক
+            </button>
+          </div>
+          <!-- service nationalize  -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-3 pl-2">
+              সেবা সহজিকরণ
+            </h3>
+            <div class="mt-5">
+              <img src="./sources/banner/e_directory.jpg" alt="" />
+            </div>
+          </div>
+          <!-- national anthom  -->
+          <div class="mt-5">
+            <h3 class="text-white font-extrabold bg-btn_color py-3 pl-2">
+              জাতীয় সংগীত
+            </h3>
+            <div class="mt-3 mx-auto w-11/12">
+              <audio
+                src="./sources/audio/bd_national_anthem.mp3"
+                controls
+                class="w-full"
+              ></audio>
+            </div>
+            <div class="mt-5">
+              <img src="./sources/banner/bkkb_button_bn.png" alt="" />
+            </div>
+          </div>
+        </aside>
+      </div>
     </main>
     <!-- footer  -->
     <footer></footer>
