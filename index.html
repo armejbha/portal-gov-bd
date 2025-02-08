@@ -21,6 +21,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              nav_color: "#683091",
+              btn_color: "#62a23c",
             },
           },
         },
@@ -41,17 +43,82 @@
     class=""
   >
     <!-- header  -->
-    <header>
+    <header class="w-8/12 mx-auto ">
       <!-- navbar -->
-      <nav>
+      <nav class="flex items-center justify-between bg-nav_color py-2 border-b-btn_color border-b-8">
         <!-- left  -->
-        <div></div>
+        <div class="flex items-center">
+          <h3 class="text-white mr-6 pl-2">বাংলাদেশ জাতীয় তথ্য বাতায়ন</h3>
+         <div class="" style="padding:2px 0px;box-shadow: 0 1px 5px #999999;padding-bottom:4px;">
+          <select name="" id="" class="py-1 pl-1 pr-4 rounded-sm" >
+            <option value="">অফিসের ধরণ</option>
+          </select>
+          <a href="#" class="bg-btn_color rounded-sm font-extrabold text-white" style="padding:3px 10px">Go</a>
+         </div>
+        </div>
         <!-- right  -->
-        <div></div>
+        <div class="flex items-center gap-2">
+          <div class="flex justify-end">
+            <input type="text" class="w-1/2 border-2 border-black  outline-1 text-lg rounded-lg">
+          </div>
+          <a href="#" class="bg-btn_color rounded-sm font-extrabold text-white" style="padding:3px 16px">Search</a>
+          <a href="#" class="bg-gray-300 font-semibold rounded-sm border-2 border-gray-400" style="padding:3px 4px;text-shadow: 0 1px rgba(255, 255, 255, .75);">English</a>
+        </div>
       </nav>
+      <!-- banner  -->
+       <div class="w-full h-80" style="background-image: url(./sources/banner1.png); background-position: center; background-repeat: no-repeat; background-size:cover;">
+          <div class="relative top-20 left-16">        
+              <div class="w-24">
+                <img class="w-full" src="./sources/logo.png" alt="">
+              </div>
+              <div class="text-gray-50 text-3xl -mt-16 ml-32">
+                <h2 class="font-bold">প্রধান বিদ্যুৎ পরিদর্শকের দপ্তর</h2>
+                <p class="mt-4 text-2xl">বিদ্যুৎ বিভাগ, বিদ্যুৎ জ্বালানি ও খনিজ সম্পদ মন্ত্রণালয়</p>
+              </div>
+          </div>
+       </div>
     </header>
     <!-- main  -->
-    <main></main>
+    <main class="w-8/12 mx-auto">
+      <!-- main nav bar  -->
+      <nav class="mt-2">
+        <ul class="flex bg-gray-100">
+          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><i class="fa-solid fa-house text-2xl text-gray-500"></i></li>
+          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">আমাদের সম্পর্কে</a></li>
+          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">আমাদের সেবা</a></li>
+          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">সরকারি ফিস</a></li>
+          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">প্রকাশনা ও প্রতিবেদন</a></li>
+          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">ডাউনলোড</a></li>
+          <li class="px-4 py-3 border-dotted border-b-2 border-r-2"><a href="#">ই-লাইসেন্স ও ম্যানুফ্যাকচারার তালিকা</a></li>
+          <li class="pl-8 pr-9 py-4 border-dotted border-b-2"><a href="#"></a></li>
+        </ul>
+        <ul class="flex">
+          <li class="p-4 border-dotted border-r-2"><a href="#">বিদ্যুৎ বন্ধু</a></li>
+          <li class="p-4 border-dotted border-r-2"><a href="#">ই-সেবা</a></li>
+          <li class="p-4 border-dotted border-r-2"><a href="#">ই-সেবার আবেদনের নিয়মাবলি</a></li>
+          <li class="p-4 border-dotted border-r-2"><a href="#">গ্যালারি</a></li>
+          <li class="p-4 border-dotted border-r-2"><a href="#">লাইসেন্স ফি ক্যালকুলেটর</a></li>
+          <li class="p-4 border-dotted border-r-2"><a href="#">গ্রাহক ফিডব্যাক</a></li>
+          <li class="p-4 border-dotted border-r-2"><a href="#">যোগাযোগ</a></li>
+          <li class="px-8 border-dotted border-r-2"><a href="#"></a></li>
+          <li class="px-12 border-dotted "><a href="#"></a></li>
+        </ul>
+      </nav>
+      <!-- separated container  -->
+       <div class="flex gap-5 mt-5">
+        <!-- main  --> 
+         <main class="basis-3/4">
+          <marquee width="" direction="left" height="100px" class="text-red-600 text-xl font-bold">
+            *** লাইসেন্স ফি ক্যালকুলেটর ব্যবহার করুন, নিজেই নিজের লাইসেন্স ফি জেনে নিন ***
+            </marquee>
+         </main>
+         <!-- aside  -->
+          <aside class="1/4">
+            
+          </aside>
+       </div>
+
+    </main>
     <!-- footer  -->
     <footer></footer>
   </body>
